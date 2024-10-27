@@ -1,27 +1,27 @@
 [
     {
       "id": 1,
-      "name": "Product A",
+      "name": "Black Framed Sunglasses",
       "price": 29.99,
-      "image": "/path/to/image1.jpg"
+      "image": "src/assets/images/black.png"
     },
     {
       "id": 2,
-      "name": "Product B",
+      "name": "Blue Framed Glasses",
       "price": 39.99,
-      "image": "/path/to/image2.jpg"
+      "image": "src/assets/images/blue.png"
     },
     {
         "id": 3,
-        "name": "Product C",
+        "name": "Gold Framed Aviators",
         "price": 39.99,
-        "image": "/path/to/image3.jpg"
+        "image": "src/assets/images/gold.png"
       },
       {
         "id": 4,
-        "name": "Product D",
+        "name": "Red Framed Sunglasses (Round)",
         "price": 39.99,
-        "image": "/path/to/image4.jpg"
+        "image": "src/assets/images/red.png"
       }
   ]
   

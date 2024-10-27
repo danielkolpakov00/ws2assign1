@@ -1,21 +1,46 @@
-
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
   return (
-    <header className="bg-blue-600 text-white p-4 shadow-md">
+    <header className="bg-gradient-to-r from-blue-700 to-blue-500 text-white p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">My Store</h1>
+        {/* Logo/Store Name */}
+        <h1 className="text-2xl md:text-3xl font-bold">
+          <Link to="/" className="hover:text-yellow-300 transition-colors">My Store</Link>
+        </h1>
+
+        {/* Navigation Links */}
         <nav>
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-6 md:space-x-8">
             <li>
-              <Link to="/" className="hover:underline">Home</Link>
+              <NavLink 
+                to="/" 
+                className={({ isActive }) =>
+                  `hover:text-yellow-300 transition-colors ${isActive ? 'text-yellow-300' : ''}`
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/products" className="hover:underline">Products</Link>
+              <NavLink 
+                to="/products" 
+                className={({ isActive }) =>
+                  `hover:text-yellow-300 transition-colors ${isActive ? 'text-yellow-300' : ''}`
+                }
+              >
+                Products
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact" className="hover:underline">Contact</Link>
+              <NavLink 
+                to="/contact" 
+                className={({ isActive }) =>
+                  `hover:text-yellow-300 transition-colors ${isActive ? 'text-yellow-300' : ''}`
+                }
+              >
+                Contact
+              </NavLink>
             </li>
           </ul>
         </nav>
